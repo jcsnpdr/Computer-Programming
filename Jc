@@ -1,0 +1,119 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int M,D,Y;
+	cout << "Please Enter the Numerical Version of date" << endl;
+	cout << endl << "Enter Month: ";
+	cin >> M;
+	cout << "Enter Day: ";
+	cin >> D;
+	cout << "Enter Year: ";
+	cin >> Y;
+	
+	
+	switch(M)
+	{
+		case 1:
+			if (D>0 && D <= 31)
+			cout << endl << "January " << D << ", " << Y;
+			else
+			cout << endl <<"Invalid Input! Please enter valid Date.";
+		break;
+		
+		case 2:
+		{
+			if ((Y % 4 == 0) && (Y % 100 != 0) || (Y % 400 == 0))
+			{
+				if (D>0 && D <= 29)
+				cout << endl <<"February " << D << ", " << Y;
+				else
+				cout << endl << "Invalid Input! Please enter valid Date.";
+			}
+			else
+			{
+				if (D>0 && D <= 28)
+				cout << endl <<"February " << D << ", " << Y;
+				else
+				cout << endl << "Invalid Input! Please enter valid Date.";
+			}
+		}
+		break;
+		
+		case 3:
+			if (D>0 && D <= 31)
+			cout << endl << "March " << D << ", " << Y;
+			else
+			cout << endl << "Invalid Input! Please enter valid Date.";
+		break;
+		
+		case 4:
+			if (D>0 && D <= 30)
+			cout << endl << "April " << D << ", " << Y;
+			else
+			cout << endl <<"Invalid Input! Please enter valid Date.";
+		break;
+		
+		case 5:
+			if (D>0 && D <= 31)
+			cout << endl <<"May " << D << ", " << Y;
+			else
+			cout << endl <<"Invalid Input! Please enter valid Date.";
+		break;
+		
+		case 6:
+			if (D>0 && D <= 30)
+			cout <<endl << "June " << D << ", " << Y;
+			else
+			cout << endl <<"Invalid Input! Please enter valid Date.";
+		break;
+		
+		case 7:
+			if (D>0 && D <= 31)
+			cout << endl << "July " << D << ", " << Y;
+			else
+			cout << endl << "Invalid Input! Please enter valid Date.";
+		break;
+		
+		case 8:
+			if (D>0 && D <= 31)
+			cout << endl << "August " << D << ", " << Y;
+			else
+			cout << endl << "Invalid Input! Please enter valid Date.";
+		break;
+		
+		case 9:
+			if (D>0 && D <= 30)
+			cout << endl << "September " << D << ", " << Y;
+			else
+			cout << endl << "Invalid Input! Please enter valid Date.";
+		break;
+		
+		case 10:
+			if (D>0 && D <= 31)
+			cout << endl << "October " << D << ", " << Y;
+			else
+			cout << endl << "Invalid Input! Please enter valid Date.";
+		break;
+		
+		case 11:
+			if (D>0 && D <= 30)
+			cout << endl << "November " << D << ", " << Y;
+			else
+			cout << endl << "Invalid Input! Please enter valid Date.";
+		break;
+		
+		case 12:
+			if (D>0 && D <= 31)
+			cout << endl << "December " << D << ", " << Y;
+			else
+			cout << endl << "Invalid Input! Please enter valid Date.";
+		break;
+		
+		default:
+			cout << endl << "Invalid Input! Please enter valid Date.";	
+		
+	}
+	return 0;
+}
